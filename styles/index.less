@@ -1,0 +1,204 @@
+/*
+Import our own variable file that inherits from Mailspring's base
+styles and overrides colors, margins, etc. to create our theme's
+overall design.
+
+Since most of the app uses these variables to style individual elements,
+we don't have to do much to create a totally different look.
+
+Note: This file needs to be named ui-variables.less so other
+stylesheets can call `@import "ui-variables";` and reference it.
+*/
+@import "ui-variables";
+
+/*
+After changing variables to set a base for our theme, we can use
+specific, narrowly-scoped CSS rules to change other things.
+
+Tip: You can use the Developer Tools in Mailspring and "Inspect
+Element" to identify the DOM elements and styles you want to override.
+
+Tip: You only need to target the latest version of Chrome (eg Electron)
+here, so you can use modern CSS like -webkit-filter and -webkit-mask-image
+(which is used to make most of the icons in the app styleable via a
+background color.)
+*/
+.sheet-toolbar {
+  border-bottom: 1px solid @border-color-divider;
+  box-shadow: none;
+}
+
+.thread-icon:not(.thread-icon-unread) {
+  -webkit-filter: invert(100%);
+}
+img.content-dark {
+  -webkit-filter: invert(100%);
+}
+img.content-light {
+  -webkit-filter: invert(100%);
+}
+
+.btn {
+    background-image: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: 0.3s ease all;
+    cursor: pointer;
+    color: white;
+    &:hover {
+        background: #111;
+    }
+}
+
+.sheet-toolbar {
+    border-bottom: 6px solid #111;
+}
+
+.sheet-toolbar-container {
+    background: #313131;
+    background-image: none;
+}
+
+.flexbox-handle-horizontal div {
+    border: none;
+}
+
+.search-bar .menu .header-container input {
+    border: none;
+    background-color: #333;
+}
+
+.column-ThreadList {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 9;
+}
+
+.column-RootSidebar {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 10;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap {
+  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
+    0 1px 1.5px rgba(255, 255, 255, 0.08);
+}
+
+.btn-feedback {
+    background-image: none;
+    background-color: #FF7043;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.thread-icon:not(.thread-icon-unread) {
+  -webkit-filter: brightness(10) grayscale(1);
+}
+
+.thread-list .thread-icon.thread-icon-unread, .draft-list .thread-icon.thread-icon-unread {
+    background-image: none;
+    background-color: #9C27B0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: -7px;
+    left: 7px;
+}
+
+.sheet-toolbar {
+	border-bottom: 3px solid #111;
+}
+
+#message-list .message-item-area .iframe-container {
+    background-color: #fff;
+}
+
+.composer-inner-wrap .compose-body {
+	background-color: #fff;
+}
+
+.list-container .list-item {
+	color: #dedede;
+}
+
+.list-container .list-item.focused {
+    background: #3187E1;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap,
+#message-list .message-item-wrap.collapsed .message-item-white-wrap {
+    background: #fff;
+}
+
+#message-list .message-item-wrap .message-item-white-wrap.composer-outer-wrap {
+    background: #fff;
+}
+
+a, a:hover, a:active, a:visited {
+    color: #3e82ff;
+}
+
+#message-list .message-header .message-time,
+#message-list .message-header .message-indicator,
+#message-list .message-item-wrap.collapsed .message-item-area .collapsed-from,
+#message-list .message-item-wrap.collapsed .message-item-area .collapsed-snippet,
+#message-list .message-item-wrap.collapsed .message-item-area .collapsed-timestamp {
+    color: #a9a9a9;
+}
+
+.message-participants .from-contact,
+.message-participants .from-label,
+.message-participants .to-label,
+.message-participants .cc-label,
+.message-participants .bcc-label,
+.message-participants .to-contact,
+.message-participants .cc-contact,
+.message-participants .bcc-contact,
+.message-participants .to-everyone {
+    color: #a9a9a9;
+}
+
+#message-list .message-subject{
+    color: white;
+}
+
+select {
+    color: white;
+}
+
+.dots{
+    color: black;
+}
+
+.file-name{
+    color: white;
+}
+
+.tokenizing-field .token {
+    color: white;
+}
+
+.button-dropdown .primary-item, .button-dropdown .only-item {
+    color: white;
+}
+
+.composer-inner-wrap input, .composer-inner-wrap textarea {
+    color: white;
+}
+
+.menu .item{
+    color: white;
+}
+
+.RichEditor-root{
+    padding: 0;
+}
+
+.RichEditor-toolbar button{
+    color: white;
+}
+
+.RichEditor-root .RichEditor-content {
+    margin-left: 10px;
+}

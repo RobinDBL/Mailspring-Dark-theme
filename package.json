@@ -1,0 +1,12 @@
+{
+  "name": "Mailspring-OnLevel-Theme",
+  "title": "Mailspring OnLevel Theme",
+  "displayName": "OnLevel",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "A MailSpring Theme inspired by the N1 Level Up theme.",
+  "license": "GPL-3.0",
+  "engines": {
+    "mailspring": "*"
+  }
+}
