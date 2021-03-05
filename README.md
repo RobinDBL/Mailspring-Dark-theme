@@ -8,3 +8,4 @@
 
 ## Screenshot
 ![Alt text](/screenshot/Mailspring-Dark-Theme.jpg?raw=true "Screenshot")
+note: The "colored" pixels are pure white text (such as on the left side on the screen). My pixelation program messed up.
