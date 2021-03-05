@@ -1,10 +1,10 @@
 {
-  "name": "Mailspring-OnLevel-Theme",
-  "title": "Mailspring OnLevel Theme",
-  "displayName": "OnLevel",
+  "name": "Mailspring-Dark-Theme",
+  "title": "Mailspring Dark Theme",
+  "displayName": "Dark - light mail",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "A MailSpring Theme inspired by the N1 Level Up theme.",
+  "description": "A Dark MailSpring Theme that keeps emails in their original state.",
   "license": "GPL-3.0",
   "engines": {
     "mailspring": "*"
